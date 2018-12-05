@@ -1,0 +1,58 @@
+import React, { Component } from "react";
+import Header from './Header.jsx';
+
+export default class App extends Component {
+    render() {
+        return (
+            <div>
+                <h1><u><i>Welcome To The World Of React!!!</i></u></h1>
+                <Header />
+                <Forimage />
+                <Body />
+            </div>
+        );
+    }
+}
+
+ class Forimage extends Component {
+    render(){
+        return(
+            <div className="image"><img src={"https://media.giphy.com/media/26tPtg8M3i6DPSSt2/giphy.gif"} alt="logo" /></div>
+        );
+    }
+} 
+
+class Body extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            r: 0
+        };
+        this.RandomNumber = this.RandomNumber.bind(this);
+    }
+    RandomNumber(){
+        this.setState({r:Math.floor( Math.random()*1000 )})
+    }
+    render(){
+        return(
+            <div>
+            <button onClick={this.RandomNumber}>RANDOM NUMBER GENERATOR</button>
+            <Numbers myNumber={this.state.r}/>
+            </div>
+        );
+    }
+}
+
+class Numbers extends Component {
+ 
+    render(){
+        return(
+            <div>
+                <h4>{this.props.myNumber}</h4>
+            </div>
+        );
+    }
+}
+
+

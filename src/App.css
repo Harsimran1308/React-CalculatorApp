@@ -1,0 +1,56 @@
+.main-header {
+  color: #27546E;
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.calculator-container {
+    box-shadow: 2px 2px 2px 1px #888888;
+    width: 15rem;
+    height: 21.7rem;
+    position: absolute;
+    left: 40%;
+
+}
+
+.calculator-screen {
+    background:#1B191C ;
+    color: white;
+    margin: 0%;
+    height: 60px;
+    font-size: 27px;
+    text-align: right;
+
+}
+
+
+table {
+    border-collapse: collapse;
+}
+tr td {
+    /* border: 0.1px solid #1B191C ; */
+}
+button {
+    height:55px;
+    width: 58px;
+    background-color: #E0E1E6;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+.bigger-button {
+    width: 118px;
+}
+
+.top-button {
+    background-color: #C8C7CC;
+}
+
+.side-button {
+    background-color: #FB9817;
+}
